@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <meta name=" viewport"  content="width=device-width,initial-scale=1.0">
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="form" class="form-style">
+    
+                <div class="input-exp">
+                    <input type="none" name="history" id="in">
+
+
+                </div>
+                <div class="op-screen">
+                    <input type="none" name="answer"  id="ans">
+                </div>
+
+        
+            <div class="keypad">
+
+
+                <input type="button" value=" CLE " id="c" onclick="form.history.value=' ' ">
+                <input type="button" value=" DLE " id="delete" class="d">
+                <input type="button" value=" % " id="e" onclick="form.history.value+=' % ' ">
+                <input type="button" value=" / "  id="f" onclick="form.history.value+=' / ' ">
+                <br><br>
+
+                <input type="button" value=" 7 " onclick="form.history.value+=' 7 ' ">
+                <input type="button" value=" 8 " onclick="form.history.value+=' 8 ' ">
+                <input type="button" value=" 9 " onclick="form.history.value+=' 9 ' ">
+                <input type="button" value=" * " onclick="form.history.value+=' * ' ">
+                <br><br>
+
+
+                <input type="button" value=" 4 " onclick="form.history.value+=' 4 ' ">
+                <input type="button" value=" 5 " onclick="form.history.value+=' 5 ' ">
+                <input type="button" value=" 6 " onclick="form.history.value+=' 6 ' ">
+                <input type="button" value=" - " onclick="form.history.value+=' - ' ">
+                <br><br>
+
+
+                <input type="button" value=" 1 " onclick="form.history.value+=' 1 ' ">
+                <input type="button" value=" 2 " onclick="form.history.value+=' 2 ' ">
+                <input type="button" value=" 3 " onclick="form.history.value+=' 3 ' ">
+                <input type="button" value=" + " onclick="form.history.value+=' + ' ">
+                <br><br>
+
+
+                
+                <input type="button" value="        0       "  onclick="form.history.value+=' 0 ' ">
+
+                <input type="button" value="        =       " onclick="calculate()">
+
+
+            </div>
+
+        </form>
+
+    </div>
+    <script src="cal.js"></script>
+</body>
+
+</html>
